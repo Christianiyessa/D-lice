@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Délice - Commande</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Le Délice</h1>
+        <nav>
+            <a href="index.html">Acceuil</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="commande.html">Commande</a>
+            <a href="contact.html">contact </a>
+        </nav>
+    </header>
+    <main>
+        <h2>Commande en ligne</h2>
+        <form>
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" required>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" required>
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" required>
+            <label for="plat">Plat :</label>
+            <select id="plat" required>
+                <option value="">--Sélectionnez--</option>
+                <option>Riz sauté - 8€</option>
+                <option>Pizza - 10€</option>
+                <option>Poisson braisé - 12€</option>
+            </select>
+            <label for="quantite">Quantité :</label>
+            <input type="number" id="quantite" min="1" value="1">
+            <label for="paiement">Paiement :</label>
+            <select id="paiement" required>
+                <option value="cash">Paiement à la livraison</option>
+                <option value="mobile">Paiement mobile</option>
+            </select>
+            <button type="submit">Commander</button>
+        </form>
+    </main>
+    </body>
+    </html>
