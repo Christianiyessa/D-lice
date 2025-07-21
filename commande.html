@@ -10,40 +10,55 @@
     <header>
         <h1>Le Délice</h1>
         <nav>
-            <a href="index.html">Acceuil</a>
+            <a href="index.html">Accueil</a>
             <a href="menu.html">Menu</a>
-            <a href="reservation.html">Reservation</a>
+            <a href="reservation.html">Réservation</a>
             <a href="commande.html">Commande</a>
-            <a href="contact.html">contact </a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main>
         <h2>Commandez en ligne</h2>
-        <form>
+        <form action="#" method="post">
             <label for="nom">Nom complet :</label>
-            <input type="text" id="nom" required>
-            <label for="telephone">Téléphone :</label>
-            <input type="tel" id="telephone" required>
-            <label for="adresse">Adresse :</label>
-            <input type="text" id="adresse" required>
-            <label for="plat">Plat :</label>
-            <select id="plat" required>
-                <option value="">--Sélectionnez--</option>
-                <option>Riz sauté - 8€</option>
-                <option>Pizza - 10€</option>
-                <option>Poisson braisé - 12€</option>
-                <option>Tartare de soumon - 10</option>
+            <input type="text" id="nom" name="nom" required>
 
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="plat">Plat :</label>
+            <select id="plat" name="plat" required>
+                <option value="">--Sélectionnez--</option>
+                <option value="riz">Riz sauté - 8€</option>
+                <option value="pizza">Pizza - 10€</option>
+                <option value="poisson">Poisson braisé - 12€</option>
+                <option value="tartare">Tartare de saumon - 10€</option>
+                <option value="salade">Salade chaude - 8€</option>
+                <option value="filet">Filet mignon sauce champignon - 18€</option>
+                <option value="risotto">Risotto crémeux aux champignons - 10€</option>
+                <option value="creme-brulee">Crème brûlée - 10€</option>
+                <option value="cassolette">Cassolette de fruits de mer - 10€</option>
             </select>
+
             <label for="quantite">Quantité :</label>
-            <input type="number" id="quantite" min="1" value="1">
+            <input type="number" id="quantite" name="quantite" min="1" value="1" required>
+
             <label for="paiement">Paiement :</label>
-            <select id="paiement" required>
+            <select id="paiement" name="paiement" required>
+                <option value="">--Sélectionnez--</option>
                 <option value="cash">Paiement à la livraison</option>
-                <option value="mobile">Paiement mobile</option>
-            </select>
+
             <button type="submit">Commander</button>
         </form>
     </main>
-    </body>
-    </html>
+
+    <footer>
+        <p>&copy; 2025 Le Délice. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
